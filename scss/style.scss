@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800;900&display=swap");
+$font-stack: "Poppins", sans-serif;
+$primary-color: rgb(197, 197, 197);
+$secondary-color: hsl(0, 0%, 11%);
+$box-general-shadow: 10px 10px rgb(197, 197, 197);
+
+* {
+  cursor: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-stack;
+}
+
+%link-general {
+  padding: 15px 30px 0px 30px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: $secondary-color;
+  transition: 0.7s;
+  box-shadow: $box-general-shadow;
+  max-height: 60px;
+}
+
+%link-general:hover {
+  box-shadow: 0px 0px rgb(197, 197, 197);
+}
+
+%flex-50 {
+  flex-basis: 50%;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 40vw;
+  padding: 30px 100px;
+  background: url(../images/shop-pbg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left;
+
+  .title {
+    font-weight: 600;
+    font-size: 30px;
+    font-family: $font-stack;
+    transition: 0.7s;
+  }
+
+  .title:hover {
+    letter-spacing: 2px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+
+    a {
+      @extend %link-general;
+    }
+  }
+}
+
+.who {
+  background-color: rgb(73, 73, 155);
+  color: #fff;
+  min-height: 20vw;
+  display: flex;
+  padding: 30px 30px;
+
+  .text,
+  .img {
+    @extend %flex-50;
+  }
+
+  .text {
+    justify-content: center;
+    padding: 60px;
+
+    h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    p {
+      padding: 30px 0px 0px 0px;
+      width: 60%;
+      font-size: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+
+  .img {
+    background: url(../images/shop-bg.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    transition: 0.7s;
+  }
+
+  .img:hover {
+    transform: rotate(-3deg);
+  }
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 0.3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.hover {
+  background-color: blue;
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}

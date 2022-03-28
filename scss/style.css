@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800;900&display=swap");
+* {
+  cursor: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.top-nav .nav a {
+  padding: 15px 30px 0px 30px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #1c1c1c;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-box-shadow: 10px 10px #c5c5c5;
+          box-shadow: 10px 10px #c5c5c5;
+  max-height: 60px;
+}
+
+.top-nav .nav a:hover {
+  -webkit-box-shadow: 0px 0px #c5c5c5;
+          box-shadow: 0px 0px #c5c5c5;
+}
+
+.who .text,
+.who .img {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 40vw;
+  padding: 30px 100px;
+  background: url(../images/shop-pbg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left;
+}
+
+.top-nav .title {
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.top-nav .title:hover {
+  letter-spacing: 2px;
+}
+
+.top-nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.who {
+  background-color: #49499b;
+  color: #fff;
+  min-height: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 30px;
+}
+
+.who .text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px;
+}
+
+.who .text h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.who .text p {
+  padding: 30px 0px 0px 0px;
+  width: 60%;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.who .img {
+  background: url(../images/shop-bg.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.who .img:hover {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(calc(-50% + 15px), -50%);
+          transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 0.3;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: width 0.3s, height 0.3s, opacity 0.3s;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.hover {
+  background-color: blue;
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+/*# sourceMappingURL=style.css.map */
