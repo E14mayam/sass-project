@@ -104,9 +104,7 @@ $box-general-shadow: 10px 10px rgb(197, 197, 197);
     background-size: cover;
     border-radius: 20px;
     transition: 0.7s;
-  }
-
-  .img:hover {
+  &:hover {
     transform: rotate(-3deg);
   }
 }
